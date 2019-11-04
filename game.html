@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pig Game</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<div id="container">
+
+			<div class="player-0-panel active">
+				<div class="player-name" id="name-0">Player 1</div>
+				<div class="player-score" id="score-0">43</div>
+				<div class="player-current-box">
+					<div class="player-current-level">Current Score</div>
+					<div class="player-current-score" id="current-0">11</div>
+				</div>
+			</div>
+
+			<div class="player-1-panel">
+				<div class="player-name" id="name-1">Player 2</div>
+				<div class="player-score" id="score-1">43</div>
+				<div class="player-current-box">
+					<div class="player-current-level">Current Score</div>
+					<div class="player-current-score" id="current-1">11</div>
+				</div>
+			</div>
+
+			<div class="back">
+				<button class="button-new">New Game</button>
+				<button class="button-roll">Roll Dice</button>
+				<button class="button-hold">Hold</button>
+
+				<img src="images/pig.png" alt="Dice" class="dice">
+				<input type="text" placeholder="WINNING SCORE" class="winning-score">
+			</div>
+			
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>

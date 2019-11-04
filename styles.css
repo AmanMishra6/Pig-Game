@@ -1,0 +1,418 @@
+body
+{
+	background-image: url("images/red-blur-background.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: Latin;
+	font-weight: 350;
+	position: relative;
+	background-size: 100%;
+}
+
+#container
+{
+	transform: translate(25%, 16%);
+	top: 50%;
+	left: 50%;
+	width: 67%;
+	background-color: #ffffff;
+	text-align: center;
+	display: block;
+	box-shadow: 10px 10px 20px rgba(0,0,0,1);
+	overflow: hidden;
+	border-radius: 30px;
+	height: auto;
+}
+
+.winning-score
+{
+	position: absolute;
+	text-align: center;
+	font-size: 15px;
+	font-family: Calibri;
+	padding: 3px;
+	width: 17.5%;
+	left: 41%;
+	top: 256px;
+	texttransform: uppercase;
+	border: solid;
+	border-radius: 15px;
+	border-width: 1px;
+	border-color: #e60000;
+}
+
+.winning-score:focus
+{
+	outline: none;
+}
+
+.player-0-panel
+{
+	width: 50%;
+	float: left;
+	height: 400px;
+	background-color: #e6e6e6;
+}
+
+.player-1-panel
+{
+	width: 50%;
+	float: left;
+	height: 400px;
+	background-color: #e6e6e6;
+}
+
+.player-name
+{
+	font-size: 200%;
+	text-align: center;
+	text-transform: uppercase;
+	left-spacing: 2px;
+	font-weight: 200;
+	margin-top: 18%;
+	margin-bottom: 4%;
+	position: relative;
+}
+
+.winner .player-name
+{
+	font-weight: 300;
+	color: #eb4d4d;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink
+{
+	80% { color: #eb4d4d ;}
+	20% { color: #e6e6e6; }
+}
+
+.player-score
+{
+	text-align: center;
+	font-family: Calibri;
+	font-size: 80px;
+	font-weight: 100;
+	color: #eb4d4d;
+	margin-bottom: 95px;
+}
+
+.player-current-box
+{
+	background-color: #eb4d4d;
+	color: #ffffff;
+	width: 30%;
+	margin: 0 auto;
+	padding: 12px;
+	text-align: center;
+	box-shadow: 10px 10px 20px rgba(0,0,0,1);
+	border-radius: 15px;
+}
+
+.player-current-level
+{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-family: Candara;
+	color: #ffffff;
+}
+
+.player-current-score
+{
+	font-size: 30px;
+}
+
+button
+{
+	position: absolute;
+	width: 17.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 1px 1px;
+	color: #ffffff;
+	background: none;
+	border: none;
+	border-radius: 20px;
+	font-family: Tempus Sans ITC;
+	font-size: 126%;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 500;
+	transition: background-color 0.1s, color 0.1s;
+	background-color: #eb4d4d;
+}
+
+button:hover
+{
+	box-shadow: 10px 10px 20px rgba(0,0,0,1);
+	background-color: #e60000;
+}
+button:active
+{
+	box-shadow: 3px 3px 10px rgba(0,0,0,1);
+}
+
+button:focus
+{
+	outline: none;
+}
+.button-new
+{
+	top: 11%;
+}
+
+.button-roll
+{
+	top: 71.43%;
+}
+
+.button-hold
+{
+	top: 83.2%;
+}
+.dice
+{
+	transform: translateY(-405%);
+	height: 60px;
+	box-shadow: 10px 10px 60px rgba(0,0,0,0);
+	border-radius: 10px;
+}
+
+.piggi
+{
+	transform: translateY(-405%);
+	height: 60px;
+	box-shadow: 10px 10px 20px rgba(0,0,0,1);
+	border-radius: 10px;
+}
+
+.back
+{
+	background-color: #e6e6e6;
+}
+.active .player-name::after
+{
+	content: "\2022";
+	font-size: 47px;
+	position: absolute;
+	color: #e60000;
+	top: -7px;
+	right: 28%;
+}
+
+.active .player-current-box
+{
+	background-color: #e60000;
+}
+
+/*
+.dice
+{
+position: absolute;
+left: 50%;
+top: 178px;
+transform: translateX(50%);
+height: 100px;
+box-shadow: 0px 10px 60px rgba(0,0,0,0.10);
+}
+/*
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.clearfix::after
+{
+content: "";
+display: table;
+clear: both;
+}
+
+
+.wrapper
+{
+position: absolute;
+top: 500%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: #ffffff;
+box-shadow: 0px 10px 50px rgba(0,0,0,0.3);
+overflow: hidden;
+}
+
+.player-0-panel
+{
+width: 500px;
+float: left;
+height: 700px;
+background-color: green;
+padding: 40px;
+}
+
+.player-1-panel
+{
+width: 500px;
+float: left;
+height: 700px;
+background-color: blue;
+padding: 40px;
+}
+
+.clear
+{
+clear: both;
+}
+
+#name-0
+{
+font-size: 40%;
+}
+
+.player-name
+{
+font-size: 40%;
+text-align: center;
+text-transform: uppercase;
+left-spacing: 2px;
+font-weight: 100;
+margin-top: 20px;
+margin-bottom: 10px;
+position: relative;
+}
+
+.player-score
+{
+text-align: center;
+font-size: 80px;
+font-weight: 100;
+color: #eb4d4d;
+margin-bottom: 130px;
+}
+
+.active
+{
+background-color: #f7f7f7;
+font-weight: 300;
+}
+
+.player-name
+{
+font-weight: 300;
+}
+
+.active .player-name::after
+{
+content: "\2022";
+font-size: 47px;
+position: absolute;
+color: #eb4d4d;
+top: -7px;
+right: 10px;
+}
+
+.player-current-box
+{
+background-color: #eb4d4d;
+color: #ffffff;
+width: 40%;
+margin: 0 auto;
+padding: 12px;
+text-align: center;
+}
+
+.player-current-label
+{
+text-transform: uppercase;
+margin-bottom: 10px;
+font-size: 12px;
+color: #222;
+}
+
+.player-current-score
+{
+font-size: 30px;
+}
+
+button
+{
+position: absolute;
+width: 200px;
+left: 50%;
+transform: translateX(-50%);
+color: #555;
+background: none;
+border: none;
+font-family: Tempus Sans ITC;
+font-size: 20px;
+text-transform: uppercase;
+cursor: pointer;
+font-weight: 300;
+transition: background-color 0.3s, color 0,3s;
+}
+
+button:hover
+{
+font-weight: 900;
+}
+button:hover i
+{
+margin-right: 20px;
+}
+
+button:focus
+{
+outline: none;
+}
+
+i
+{
+color: #eb4d4d;
+display: inline-block;
+margin-right: 15px;
+font-size: 32px;
+line-height: 1;
+vertical-align: text-top;
+margin-top: -4px;
+transition: margin 0.3s;
+}
+
+.button-new
+{
+top: 45px;
+}
+
+.button-roll
+{
+top: 403px;
+}
+
+.button-hold
+{
+top: 467px;
+}
+
+.dice
+{
+position: absolute;
+left: 50%;
+top: 178px;
+transform: translateX(50%);
+height: 100px;
+box-shadow: 0px 10px 60px rgba(0,0,0,0.10);
+}
+
+.winner
+{
+background-color: #f7f7f7;
+}
+
+.winner .player-name
+{
+font-weight: 300;
+color: #eb4d4d;
+}
+
+*/
