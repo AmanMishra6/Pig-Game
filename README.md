@@ -1,6 +1,5 @@
 # Pig-Game
-### Pig Game using HTML5, CSS3, JavaScript
-
+### This game is made using [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ![](https://github.com/aman-1998/Pig-Game/blob/master/images/Pig.PNG)
 
